@@ -18,7 +18,8 @@ For discrimination finetuning (e.g. saying whether or not the generation is huma
 """
 import json
 import os
-
+import sys
+#sys.append(PATH)
 import numpy as np
 import tensorflow as tf
 from tensorflow.python.lib.io import file_io
