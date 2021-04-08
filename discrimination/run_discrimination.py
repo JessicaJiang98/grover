@@ -68,7 +68,7 @@ flags.DEFINE_integer("batch_size", 32, "Batch size used")
 
 flags.DEFINE_integer("max_training_examples", -1, "if you wanna limit the number")
 
-flags.DEFINE_bool("do_train", False, "Whether to run training.")
+flags.DEFINE_bool("do_train", True, "Whether to run training.")
 
 flags.DEFINE_bool("predict_val", False, "Whether to run eval on the dev set.")
 
@@ -88,7 +88,7 @@ flags.DEFINE_bool("adafactor", False, "Whether to run adafactor")
 
 flags.DEFINE_float("learning_rate", 5e-5, "The initial learning rate for Adam.")
 
-flags.DEFINE_bool("use_tpu", False, "Whether to use TPU or GPU/CPU.")
+flags.DEFINE_bool("use_tpu", True, "Whether to use TPU or GPU/CPU.")
 
 flags.DEFINE_string(
     "tpu_name", None,
